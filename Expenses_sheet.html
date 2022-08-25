@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="Script.js" defer></script>
+    </head>
+
+    <!-- ====================================================================== -->
+    
+    <body>
+        <div class="accessibility-section">
+            <button class="btn period-btn" onclick="resetDetails()">Reset Period</button>
+        </div>   
+    <main>
+        <div class="left-col">
+            <!-- ======================================================================= -->
+        
+            <div class="acc-details">
+                <div><span>Account name: <span class="bold">Shamael Duya</span></span></div>
+                <br>
+                <div><span>Account no.: <span class="bold">0115645588474839</span></span></div>
+            </div>
+
+
+        <section class="balance-display">
+            <h2>Balance<div class="balance-amt" id="balance"></div></h2>
+        </section>
+
+<!-- =========================================================================== -->
+
+        <div class="entry">
+           <div class="input-section">
+            <div class="a"><label for="amount">Enter amount</label></div>
+            <div class="b"><input type="currency" id="input" class="amount" placeholder="Min. $1"></div>
+            <div class="c"><label for="description">Description</label></div>
+            <div class="d"><input type="text" class="description" placeholder="Item name" id="description"></div>
+           </div>
+           <div class="button-area">
+            <button id="credit" onclick="creditAccount()" class="btn btn-add">Credit</button>
+            <button id="withdraw" class="btn btn-sub" onclick="withdrawFunds()">Debit</button>
+           </div>
+
+        </div>
+
+
+<!-- ======================================================================= -->
+        </div>
+
+
+        <div class="right-col">
+            <div class="column-title"><h3>Recent transactions</h3></div>
+            <div class="mini-statement" id="statements"></div>
+    
+            <!-- ===================================================== -->
+    
+            <div class="totals">
+                <div class="this-month">
+                    <span class="total_amt">This period</span><span class="bold in" id="inTotal"></span><span class="bold out" id="outTotal"></span>
+                </div>
+                <div class="last-month">
+                    <span class="total_amt">All Time</span><span class="bold in" id="inTotal2">$0.00</span><span class="bold out" id="outTotal2">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
