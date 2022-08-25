@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #feac5e, #4bc0c8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+}
+
+/* ===================================================================== */
+.accessibility-section{
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 0.9em;
+}
+
+.period-btn{
+    background-color: #4bc0c8;
+}
+
+
+main{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+
+}
+
+.acc-details{
+    margin: 10px 0;
+    width: 95%;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffd194, #70e1f5);
+    
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.balance-display{
+    height: 20vh;
+    background-color: white;
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ffd194, #70e1f5);
+}
+
+.balance-display h2{
+    font-size: x-large;
+}
+
+.balance-amt{
+    font-size: 2em;
+    color: rgb(11, 61, 119);
+    text-align: center;
+}
+
+.entry{
+    background-image: linear-gradient(to right, #ffd194, #70e1f5);
+    height: 43vh;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 95%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.input-section label{
+    font-size: 1.2em;
+}
+
+.a, .c{
+    margin: 0 0 5px 0;
+}
+
+.b{
+    margin: 0 0 15px 0; 
+}
+
+.amount, .description{
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(119, 118, 118);;
+}
+
+.description{
+    height: 60;
+}
+
+.button-area{
+    margin-top: 30px;
+}
+
+.btn{
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-add{
+    background-color: rgb(89, 224, 89);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 3px 5px grey;
+    margin-right: 10px;
+}
+
+.btn-add:hover{
+    background-color: rgb(43, 150, 43);
+}
+
+.btn-sub{
+    background-color: rgb(227, 79, 79);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 3px 5px grey;
+}
+
+.btn-sub:hover{
+    background-color: rgb(186, 43, 43);
+}
+
+.right-col{
+    position: relative;
+}
+
+.mini-statement{
+    /* background-color: red; */
+    margin-top: 15px;
+    max-height: 380px;
+    overflow-y: hidden;
+}
+
+.column-title{
+    background-color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 13px;
+    color: rgb(72, 69, 69);
+}
+
+.transaction{
+    background-color: white;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(72, 69, 69);
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 50% 20% 18% 1fr;
+    
+    padding: 10px 20px;
+    transition: all 0.125s ease-in;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.transaction:hover{
+    
+    box-shadow: 2px 3px 10px grey;
+}
+
+#no-transaction{
+    text-align: center;
+    padding-left: 270px;
+    color: rgb(244, 96, 96);
+}
+
+.remove-button{
+    height: 25px;
+    background-color: rgb(140, 199, 247);
+    color: white;
+    width: 66px;
+    border-radius: 10px;
+    border: none;
+}
+
+#in, .in{
+    color: rgb(56, 200, 56);
+}
+
+#out, .out{
+    color: red;
+}
+
+.time-stamp{
+    font-size: 0.7em;
+}
+
+.item-stamp{
+    font-size: 0.9em;
+}
+
+.totals{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 33px;
+    background-color: rgb(241, 238, 238);
+    height: 100px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: rgb(72, 69, 69);
+    box-shadow: 3px 3px 5px grey;
+}
+
+.this-month, .last-month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+
